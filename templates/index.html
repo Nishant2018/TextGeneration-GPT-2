@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPT-2 Text Generation</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+</head>
+<body style="background-color: #6ea6ec; font-family: 'Segoe UI', sans-serif; text-align: center;">
+    <div class="container" style="max-width: 800px; margin: 50px auto; padding: 20px; background-color: #acb676; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h1 style="color: #333; margin-bottom: 20px;">GPT-2 Text Generation</h1>
+        <p style="font-size: 16px; margin-bottom: 20px;">Welcome to the GPT-2 Text Generation project! Enter your prompt and choose the maximum length of the generated text to get started.</p>
+        <form method="POST" action="/" style="margin-bottom: 20px;">
+            <label for="prompt" style="font-weight: bold;">Enter your prompt:</label><br>
+            <input type="text" id="prompt" name="prompt" placeholder="Enter Your Text" style="width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 10px; border-radius: 3px; border: 1px solid hsl(66, 20%, 48%);">
+            <br>
+            <label for="max_length" style="font-weight: bold;">Maximum Length:</label><br>
+            <input type="number" id="max_length" name="max_length" min="1" max="1000" value="200" required style="width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 10px; border-radius: 3px; border: 1px solid #ccc;">
+            <br>
+            <button type="submit" style="padding: 10px 20px; background-color: #51ff00; color: #e89898; border: none; border-radius: 3px; cursor: pointer; transition: background-color 0.3s;">Generate Text</button>
+        </form>
+        {% if prompt %}
+        <div class="generated-text" style="margin-top: 20px; border-top: 1px solid #ccc; padding-top: 20px; text-align: left;">
+            <h2 style="color: #333; margin-bottom: 10px;">Generated Text:</h2>
+            <p style="white-space: pre-wrap; font-size: 16px; line-height: 1.6;">{{ generated_text }}</p>
+        </div>
+        {% endif %}
+        <div class="social-links">
+            <a href="https://www.instagram.com/end_of_night.17j03/" target="_blank">
+                <img src="../static/css/img/instagram.jpg" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/nishantraghuwanshi.singh.5" target="_blank">
+                <img src="../static/css/img/fb.png" alt="Facebook">
+            </a>
+            <a href="https://www.linkedin.com/in/nishant-raghuwanshi-1509a724a/" target="_blank">
+                <img src="../static/css/img/linkdin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/Nishant2018" target="_blank">
+                <img src="../static/css/img/github.png" alt="GitHub">
+            </a>
+            <a href="https://www.kaggle.com/endofnight17j03" target="_blank">
+                <img src="../static/css/img/Kaggle_logo.png" alt="Kaggle">
+            </a>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 Your Website. All rights reserved. | <a href="/terms">Terms of Use</a> | <a href="/privacy">Privacy Policy</a></p>
+        </div>
+        <div class="additional-info" style="margin-top: 30px;">
+            <h3 style="color: #333; margin-bottom: 10px;">Additional Information</h3>
+            <p style="font-size: 14px; line-height: 1.5;">Explore our GPT-2 Text Generation project to generate creative and engaging text based on your prompts. This tool uses advanced natural language processing techniques to produce realistic and coherent text outputs.</p>
+        </div>
+    </div>
+</body>
+</html>
