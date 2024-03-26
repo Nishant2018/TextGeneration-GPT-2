@@ -1,5 +1,5 @@
 Flask==2.0.2
-tokenizers==0.10.0
+tokenizers>=0.10.1,<0.11
 transformers==4.12.0
 torch
 tensorflow
