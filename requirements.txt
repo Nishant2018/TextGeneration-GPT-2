@@ -616,16 +616,6 @@ pysal==24.1
 pyshp==2.3.1
 pytesseract==0.3.10
 pytest==8.1.1
-python-Levenshtein==0.25.0
-python-bidi==0.4.2
-python-dateutil==2.9.0.post0
-python-dotenv==1.0.0
-python-json-logger==2.0.7
-python-louvain==0.16
-python-lsp-jsonrpc==1.1.2
-python-lsp-server==1.10.1
-python-slugify==8.0.4
-python-utils==3.8.2
 pythreejs==2.4.2
 pytoolconfig==1.3.1
 pytools==2023.1.1
